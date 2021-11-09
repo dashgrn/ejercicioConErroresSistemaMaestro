@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 
-const url = "https://maestrogeekapp.herokuapp.com/data/";
+const url = "https://maestrosgeek.herokuapp.com/data";
 
 
 export default class Estudiantes extends Component {
@@ -13,13 +13,13 @@ export default class Estudiantes extends Component {
     constructor(props){
         super(props);
         this.state = {
-            data: []
+            data: [],
             modalEliminar: false,
         }
     }
 
     componentDidMount(){
-        //this.peticionGet();
+        this.peticionGet();
     }
 
    
@@ -37,7 +37,7 @@ export default class Estudiantes extends Component {
     peticionGet=()=>{
         axios.get(url)
         .then(response => {
-            this.setState({data response.data})
+            this.setState({data: response.data})
         })
         .catch(error => {
             console.log(error.message);
@@ -47,7 +47,7 @@ export default class Estudiantes extends Component {
     
    
    
-    peticionDelete =  () => {
+    peticionDelete =  async() => {
         await axios.delete(url+this.state.form.id)
         .then(response => {
             this.setState({modalEliminar:false});
@@ -57,7 +57,8 @@ export default class Estudiantes extends Component {
         })
     }
 
-    {
+    render()
+     {
         return (
             <div className="container">
 
