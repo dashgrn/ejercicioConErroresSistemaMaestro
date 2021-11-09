@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/ejercicioConErroresSistemaMaestro/static/js/main.800a9307.chunk.js",
+    "main.js.map": "/ejercicioConErroresSistemaMaestro/static/js/main.800a9307.chunk.js.map",
+    "runtime-main.js": "/ejercicioConErroresSistemaMaestro/static/js/runtime-main.e9e4c9b8.js",
+    "runtime-main.js.map": "/ejercicioConErroresSistemaMaestro/static/js/runtime-main.e9e4c9b8.js.map",
+    "static/js/2.0d1678ec.chunk.js": "/ejercicioConErroresSistemaMaestro/static/js/2.0d1678ec.chunk.js",
+    "static/js/2.0d1678ec.chunk.js.map": "/ejercicioConErroresSistemaMaestro/static/js/2.0d1678ec.chunk.js.map",
+    "index.html": "/ejercicioConErroresSistemaMaestro/index.html",
+    "static/js/2.0d1678ec.chunk.js.LICENSE.txt": "/ejercicioConErroresSistemaMaestro/static/js/2.0d1678ec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9e4c9b8.js",
+    "static/js/2.0d1678ec.chunk.js",
+    "static/js/main.800a9307.chunk.js"
+  ]
+}
