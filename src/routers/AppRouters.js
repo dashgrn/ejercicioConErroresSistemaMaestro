@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import {
     BrowserRouter as Router,
-    Switch,
-    Route
+    Route,
+    Routes,
+    Link
 } from "react-router-dom";
 import Navbar from '../components/Navbar'
-import estudiantes from "../components/Estudiante";
+import Estudiantes from "../components/Estudiantes";
 
 
 export default class AppRouters extends Component {
@@ -15,11 +16,10 @@ export default class AppRouters extends Component {
                 <Router>
                     <Navbar />
                     <Routes>
-                        <Route exact path="/Estudiantes" element={<Estudiantes/>} />
+                        <Route exact path="/Estudiantes" element={<Estudiantes />} />
                     </Routes>
                 </Router>
             </div>
         )
     }
 }
-
